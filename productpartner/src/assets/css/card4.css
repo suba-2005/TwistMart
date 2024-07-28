@@ -1,0 +1,64 @@
+.awards-recognition-section {
+  padding: 20px;
+  background: url('https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/light-blue-background_GkNvxFHd_SB_PM.jpg') no-repeat center center/cover, #f9f9f9; /* Background image with fallback color */
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.section-description {
+  flex: 2;
+  max-width: 600px; /* Set a max width to ensure the description area is wide but not too wide */
+  margin-right: 20px;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.section-description p {
+  font-size: 1.5rem; /* Adjust font size for better readability */
+  text-align: justify; /* Justify the text within the paragraph */
+  padding: 10px; /* Adjust padding for better spacing */
+}
+
+.certifications {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end; /* Align the certification cards to the right */
+}
+
+.certification {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.certification-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.certification-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.certification-description {
+  font-size: 1em;
+  color: #666;
+  text-align: justify; /* Justify the text within the certification description */
+}

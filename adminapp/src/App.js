@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Sidebar from './Sidebar';
+import Navbar from './Navbar';
+import MainContent from './MainContent';
+import './App.css'; // Importing the main CSS file
 
-function App() {
+const App = () => {
+  const [isSidebarHidden, setIsSidebarHidden] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleSidebar = () => setIsSidebarHidden(!isSidebarHidden);
+  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${isDarkMode ? 'dark' : ''}`}>
+      <Sidebar isHidden={isSidebarHidden} />
+      <div className={`content ${isSidebarHidden ? 'sidebar-hidden' : ''}`}>
+        <Navbar onMenuClick={toggleSidebar} onThemeToggle={toggleDarkMode} />
+        <MainContent />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
