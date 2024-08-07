@@ -1,0 +1,36 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .stats-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(25% - 20px); /* 4 cards in a row with space */
+    text-align: center;
+  }
+  
+  .icon-container {
+    margin-bottom: 10px;
+  }
+  
+  .stats-content h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .stats-content p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  

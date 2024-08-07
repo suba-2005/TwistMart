@@ -1,0 +1,89 @@
+/* Wrapper to hold the grid layout */
+.product-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    gap: 30px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+    max-width: 100%; /* Maximum width of the grid container */
+    margin: 0 auto;
+  }
+  
+  /* Style for each product card */
+  .product-card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Curved corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide overflow */
+    background-color: #fff; /* Card background color */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for card */
+  .product-card:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+  }
+  
+  /* Style for the wishlist icon */
+  .wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f00; /* Wishlist icon color */
+    font-size: 24px; /* Wishlist icon size */
+    cursor: pointer;
+  }
+  
+  /* Style for the product image */
+  .product-image {
+    width: 100%; /* Fill the card width */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure image covers its container */
+  }
+  
+  /* Style for the product details section */
+  .product-details {
+    padding: 15px; /* Padding inside the card */
+  }
+  
+  /* Style for the product name */
+  .product-name {
+    font-size: 18px; /* Font size for product name */
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the product offer */
+  .product-offer {
+    font-size: 16px; /* Font size for offer text */
+    color: #e74c3c; /* Offer text color */
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the product price */
+  .product-price {
+    font-size: 18px; /* Font size for price text */
+    color: #333; /* Price text color */
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the "View Shop" button */
+  .view-shop-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 8px; /* Curved corners for the button */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer;
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for the button */
+  .view-shop-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
